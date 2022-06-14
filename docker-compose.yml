@@ -11,7 +11,8 @@ services:
     - "3000:80"
 
   server-one:
-    build: ./cloudcomputing
+    build: /cloudcomputing
+
     links:
       - redis
     expose:
@@ -20,7 +21,8 @@ services:
       - NAME=one
 
   server-two:
-    build: ./cloudcomputing
+    build: /cloudcomputing
+
     links:
       - redis
     expose:
@@ -29,7 +31,8 @@ services:
       - NAME=two
 
   server-three:
-    build: ./cloudcomputing
+    build: /cloudcomputing
+
     links:
       - redis
     expose:
@@ -38,7 +41,8 @@ services:
       - NAME=three
 
   server-four:
-    build: ./cloudcomputing
+    build: /cloudcomputing
+
     links:
       - redis
     expose:
